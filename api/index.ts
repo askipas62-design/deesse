@@ -79,7 +79,7 @@ app.post("/api/send-payment-proof", upload.single("proof"), async (req, res) => 
 
     const { data, error } = await resend.emails.send({
       from: "Déesse Angèle <onboarding@resend.dev>",
-      to: "zakaz@forumles.ru",
+      to: "magiparvel@gmail.com",
       subject: `Nouveau paiement pour la Déesse Angèle - ${tier}`,
       html: `
         <div style="font-family: serif; padding: 20px; background: #0a0a0a; color: #fff; border: 1px solid #c5a666;">
