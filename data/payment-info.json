@@ -1,0 +1,26 @@
+{
+  "wero": {
+    "label": "Wero",
+    "fields": [
+      { "label": "Numéro", "value": "0780948256" },
+      { "label": "Nom", "value": "DARDAI A****" }
+    ],
+    "instruction": "Effectuez votre paiement via Wero vers ce numéro de téléphone. Assurez-vous que le destinataire est bien DARDAI A****."
+  },
+  "crypto": {
+    "label": "Crypto (LTC - Litecoin)",
+    "fields": [
+      { "label": "Adresse LTC", "value": "ltc1qtclzqfsk8wjyn99asx7h37n403mxmc24889247" }
+    ],
+    "instruction": "Envoyez le paiement en Litecoin (LTC) uniquement sur cette adresse."
+  },
+  "virement": {
+    "label": "Virement Bancaire",
+    "fields": [
+      { "label": "IBAN", "value": "FR76 3000 6000 0102 3456 7890 123" },
+      { "label": "BIC", "value": "AGLEFR2X" },
+      { "label": "Nom du Bénéficiaire", "value": "DÉESSE ANGÈLE" }
+    ],
+    "instruction": "IMPORTANT: Lors du virement, indiquez exactement le nom du bénéficiaire ci-dessus."
+  }
+}
