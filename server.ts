@@ -36,7 +36,13 @@ async function startServer() {
   app.get("/api/payment-info", (req, res) => {
     try {
       if (!fs.existsSync(PAYMENT_FILE)) {
-        return res.status(404).json({ error: "Payment info not found" });
+        // Return default data if file doesn't exist yet to avoid 404
+        const defaultData = {
+          wero: { label: "Wero", fields: [{ label: "Numéro", value: "0780948256" }, { label: "Nom", value: "DARDAI A****" }], instruction: "..." },
+          crypto: { label: "Crypto", fields: [{ label: "Adresse LTC", value: "..." }], instruction: "..." },
+          virement: { label: "Virement", fields: [{ label: "IBAN", value: "..." }], instruction: "..." }
+        };
+        return res.json(defaultData);
       }
       const data = fs.readFileSync(PAYMENT_FILE, "utf-8");
       res.json(JSON.parse(data));
@@ -49,7 +55,6 @@ async function startServer() {
   app.post("/api/payment-info", (req, res) => {
     try {
       const { password, data } = req.body;
-      // Simple hardcoded password for now - in production use .env
       const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "angele2026";
       
       if (password !== ADMIN_PASSWORD) {
@@ -125,7 +130,7 @@ async function startServer() {
 
       const { data, error } = await resend.emails.send({
         from: "Déesse Angèle <onboarding@resend.dev>",
-        to: "zakaz@forumles.ru",
+        to: "magipavel@gmail.com",
         subject: `Nouveau paiement pour la Déesse Angèle - ${tier}`,
         html: `
           <div style="font-family: serif; padding: 20px; background: #0a0a0a; color: #fff; border: 1px solid #c5a666;">
