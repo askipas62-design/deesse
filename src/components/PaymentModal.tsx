@@ -35,33 +35,8 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
   const [isDone, setIsDone] = useState(false);
   const [step, setStep] = useState<'method' | 'email' | 'upload'>('method');
   const [confirmationEmail, setConfirmationEmail] = useState('');
-  const [copied, setCopied] = useState(false);
-  const [paymentDetails, setPaymentDetails] = useState<PaymentDetailsMap>({
-    wero: {
-      label: "Wero",
-      fields: [
-        { label: "Numéro", value: "0780948256" },
-        { label: "Nom", value: "DARDAI A****" }
-      ],
-      instruction: "Effectuez votre paiement via Wero vers ce numéro de téléphone. Assurez-vous que le destinataire est bien DARDAI A****."
-    },
-    crypto: {
-      label: "Crypto (LTC - Litecoin)",
-      fields: [
-        { label: "Adresse LTC", value: "ltc1qtclzqfsk8wjyn99asx7h37n403mxmc24889247" }
-      ],
-      instruction: "Envoyez le paiement en Litecoin (LTC) uniquement sur cette adresse."
-    },
-    virement: {
-      label: "Virement Instantané",
-      fields: [
-        { label: "IBAN", value: "FR76 3000 6000 0102 3456 7890 123" },
-        { label: "BIC", value: "AGLEFR2X" },
-        { label: "Nom du Bénéficiaire", value: "DÉESSE ANGÈLE" }
-      ],
-      instruction: "IMPORTANT: Lors du virement, indiquez exactement le nom du bénéficiaire ci-dessus."
-    }
-  });
+  const [copiedValue, setCopiedValue] = useState<string | null>(null);
+  const [paymentDetails, setPaymentDetails] = useState<PaymentDetailsMap | null>(null);
 
   const methodIcons: Record<string, React.ReactNode> = {
     wero: <Smartphone className="w-6 h-6" />,
@@ -77,7 +52,7 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
           setPaymentDetails(response.data);
         }
       } catch (err) {
-        console.error("Failed to fetch payment info, using defaults", err);
+        console.error("Failed to fetch payment info", err);
       }
     };
     fetchPaymentInfo();
@@ -85,8 +60,8 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
 
   const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setCopiedValue(text);
+    setTimeout(() => setCopiedValue(null), 2000);
   };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -114,6 +89,11 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
         },
       });
 
+      if (response.data.warning || response.data.debug) {
+        console.warn("Server Warning:", response.data.message);
+        console.warn("Debug Info:", response.data.debug || response.data.warning);
+      }
+
       // Persist locally for the Revelation page if needed
       localStorage.setItem('deesse_last_purchase', JSON.stringify({
         tierName,
@@ -125,7 +105,8 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
       setIsDone(true);
     } catch (err: any) {
       console.error("Submission error:", err);
-      setError(err.response?.data?.error || "Une erreur est survenue lors de l'envoi.");
+      const serverError = err.response?.data?.error || err.response?.data?.message || "Une erreur est survenue lors de l'envoi.";
+      setError(serverError);
       setIsVerifying(false);
     }
   };
@@ -226,6 +207,11 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
               Fermer la fenêtre
             </button>
           </div>
+        ) : !paymentDetails ? (
+          <div className="py-20 flex flex-col items-center justify-center space-y-4">
+            <Loader2 className="w-8 h-8 text-brand-gold animate-spin" />
+            <p className="text-[10px] uppercase tracking-[0.3em] text-brand-gold/60">Connexion au Sanctuaire...</p>
+          </div>
         ) : step === 'method' ? (
           <div className="space-y-4">
             <p className="text-[10px] uppercase tracking-widest text-white/40 text-center mb-6">Choisissez votre mode de paiement</p>
@@ -303,7 +289,7 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
                         className="flex-shrink-0 p-2 rounded-full bg-brand-gold/10 text-brand-gold hover:bg-brand-gold/20 transition-all active:scale-95 group"
                         title={`Copier ${field.label}`}
                       >
-                        {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+                        {copiedValue === field.value ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                       </button>
                     </div>
                   </div>
@@ -315,7 +301,7 @@ export default function PaymentModal({ tierName, price, onClose, onSuccess }: Pa
               </p>
               
               <AnimatePresence>
-                {copied && (
+                {copiedValue && (
                   <motion.div 
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
