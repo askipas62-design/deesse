@@ -130,7 +130,7 @@ async function startServer() {
 
       const { data, error } = await resend.emails.send({
         from: "Déesse Angèle <onboarding@resend.dev>",
-        to: "magipavel@gmail.com",
+        to: "magiparvel@gmail.com",
         subject: `Nouveau paiement pour la Déesse Angèle - ${tier}`,
         html: `
           <div style="font-family: serif; padding: 20px; background: #0a0a0a; color: #fff; border: 1px solid #c5a666;">
