@@ -104,7 +104,7 @@ export default function PaymentModal({
         }
       ],
       instruction:
-        "⚠️ IMPORTANT : Lors du virement bancaire, vous devez impérativement saisir EXACTEMENT le nom du bénéficiaire. Toute erreur dans le nom peut entraîner un rejet automatique ou un blocage du transfert bancaire."
+        "⚠️ IMPORTANT : Lors du virement bancaire, vous devez impérativement saisir EXACTEMENT le nom du bénéficiaire comme Indiqué. Toute erreur dans le nom peut entraîner un rejet automatique ou un blocage du transfert bancaire."
     }
   });
 
