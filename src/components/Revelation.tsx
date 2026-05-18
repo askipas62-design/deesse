@@ -115,8 +115,8 @@ export default function Revelation() {
             className="mt-10 p-4 border border-brand-gold/10 bg-brand-gold/5 rounded-lg text-center"
           >
             <p className="text-[9px] uppercase tracking-[0.3em] text-brand-gold leading-relaxed">
-              Ces informations sont strictement confidentielles.<br />
-              Ne partage pas ce message.
+              Ces informations que nous vous enverrons seronts strictement confidentielles.<br />
+              Vous ne devez en aucun cas les divulger.
             </p>
           </motion.div>
         </motion.div>
