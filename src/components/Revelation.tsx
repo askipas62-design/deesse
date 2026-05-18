@@ -58,7 +58,7 @@ export default function Revelation() {
             {purchase && (
               <p className="text-brand-gold font-bold text-xs uppercase tracking-widest mt-2">{purchase.tierName}</p>
             )}
-            <p className="text-white/40 text-[10px] uppercase tracking-widest mt-4">Un mail de confirmation t'a été envoyé.</p>
+            <p className="text-white/40 text-[10px] uppercase tracking-widest mt-4">Un mail de confirmation te seras  envoyé.</p>
           </motion.div>
 
           <div className="space-y-6">
@@ -73,7 +73,7 @@ export default function Revelation() {
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-white/40">Prochain Rendez-vous</p>
-                <p className="text-lg font-display uppercase tracking-widest">Samedi 28 Juin 2025</p>
+                <p className="text-lg font-display uppercase tracking-widest">Les informations sur le lien l'heure et la date vous serons communiqué par mails</p>
               </div>
             </motion.div>
 
@@ -88,7 +88,7 @@ export default function Revelation() {
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-white/40">Domaine de Luxe (Secret)</p>
-                <p className="text-lg font-display uppercase tracking-widest">Le Manoir des Ombres, Paris VIII</p>
+                <p className="text-lg font-display uppercase tracking-widest">???</p>
               </div>
             </motion.div>
 
