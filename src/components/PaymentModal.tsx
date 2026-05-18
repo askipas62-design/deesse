@@ -64,11 +64,11 @@ export default function PaymentModal({
       fields: [
         {
           label: "Numéro",
-          value: "0780948256"
+          value: "+33 7 80 94 58 83"
         },
         {
           label: "Nom",
-          value: "DARDAI A****"
+          value: "MME NORAH GARNIER"
         }
       ],
       instruction:
