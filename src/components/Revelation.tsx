@@ -54,7 +54,7 @@ export default function Revelation() {
           >
             <Lock className="w-12 h-12 text-brand-gold mx-auto mb-6 animate-pulse" />
             <h2 className="text-4xl gold-gradient-text font-display mb-4 uppercase tracking-[0.2em]">Accès Autorisé</h2>
-            <p className="font-cursive text-brand-purple-glow text-2xl">Ton pass a été validé par la Déesse.</p>
+            <p className="font-cursive text-brand-purple-glow text-2xl">voici ton passe temporaire .</p>
             {purchase && (
               <p className="text-brand-gold font-bold text-xs uppercase tracking-widest mt-2">{purchase.tierName}</p>
             )}
