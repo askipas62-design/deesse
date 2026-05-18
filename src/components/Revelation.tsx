@@ -72,7 +72,7 @@ export default function Revelation() {
                 <Calendar className="text-brand-gold w-5 h-5" />
               </div>
               <div>
-                <p className="text-[10px] uppercase tracking-widest text-white/40">Prochain Rendez-vous</p>
+                <p className="text-[10px] uppercase tracking-widest text-white/40">Rendez-vous</p>
                 <p className="text-lg font-display uppercase tracking-widest">Les informations sur le lien l'heure et la date vous serons communiqué par mails</p>
               </div>
             </motion.div>
