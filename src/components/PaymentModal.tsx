@@ -64,11 +64,11 @@ export default function PaymentModal({
       fields: [
         {
           label: "Numéro",
-          value: "INDISPONIBLE"
+          value: "+33 7 57 82 45 55"
         },
         {
           label: "Nom",
-          value: ""
+          value: "MME MARIE THERESE G."
         }
       ],
       instruction:
