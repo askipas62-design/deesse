@@ -89,7 +89,7 @@ export default function PassVerification() {
             <div className="relative mb-12">
               <div className="absolute -left-4 top-0 text-brand-gold/20 text-6xl font-serif">"</div>
               <p className="text-sm text-white/50 italic leading-relaxed px-4 text-center font-serif">
-                Ce fragment d'or numérique prouve votre appartenance à mon cercle privé. Présentez ce sceau lors de votre arrivée au sanctuaire pour que les portes s'ouvrent devant vous.
+                Ce fragment d'or numérique est votre passe temporaire pour notre cercle privé.
               </p>
             </div>
 
