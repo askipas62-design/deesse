@@ -4,9 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Passes from './components/Passes';
 import Footer from './components/Footer';
-import WelcomePopup from './components/WelcomePopup';
 import Hostesses from './components/Hostesses';
-import Reviews from './components/Reviews';
 import Revelation from './components/Revelation';
 import Manifesto from './components/Manifesto';
 import BackgroundCarousel from './components/BackgroundCarousel';
@@ -61,8 +59,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-
-      <Reviews />
     </>
   );
 }
@@ -105,7 +101,6 @@ export default function App() {
         )}
 
         <Footer />
-        <WelcomePopup />
       </main>
     </Router>
   );
