@@ -103,7 +103,7 @@ export default function Revelation() {
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-white/40">⏳ 6 Heures d'Immersion</p>
-                <p className="text-lg font-display uppercase tracking-widest">22:00 — 04:00</p>
+                <p className="text-lg font-display uppercase tracking-widest"></p>
               </div>
             </motion.div>
           </div>
@@ -148,7 +148,7 @@ export default function Revelation() {
           </button>
 
           <p className="text-white/40 text-[10px] uppercase tracking-widest leading-relaxed max-w-xs">
-            Présente ce code QR à l'entrée du Manoir pour valider ton identité et accéder à l'événement.
+            
           </p>
           
           <div className="mt-auto pt-8 border-t border-white/5 w-full">
