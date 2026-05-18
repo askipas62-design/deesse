@@ -64,15 +64,15 @@ export default function PaymentModal({
       fields: [
         {
           label: "Numéro",
-          value: "+33 7 80 94 58 83"
+          value: "INDISPONIBLE"
         },
         {
           label: "Nom",
-          value: "MME NORAH GARNIER"
+          value: ""
         }
       ],
       instruction:
-        "Effectuez votre paiement Wero vers ce numéro et vérifiez soigneusement le bénéficiaire."
+        "
     },
 
     crypto: {
