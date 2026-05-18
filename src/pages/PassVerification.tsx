@@ -101,7 +101,7 @@ export default function PassVerification() {
               </div>
               <div className="flex items-center gap-3 text-left">
                 <Calendar className="w-4 h-4 text-brand-gold/40" />
-                <div className="text-[9px] uppercase tracking-widest text-white/40">Date<br/><span className="text-white/80">Prochaine Session</span></div>
+                <div className="text-[9px] uppercase tracking-widest text-white/40">Date<br/><span className="text-white/80">Toutes les informations concernants la prochaine sessions te sera envoyer dès que ton paiement sera vérifié</span></div>
               </div>
             </div>
 
