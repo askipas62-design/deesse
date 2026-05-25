@@ -92,15 +92,15 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1621 8000 0140 1213 1466 927"
+          value: "FR76 1723 8000 0100 4146 8128 515"
         },
         {
           label: "BIC",
-          value: "BFBKFRP1"
+          value: "SCSYFRP2"
         },
         {
           label: "Nom du Bénéficiaire",
-          value: "Jennifer Pelliccia"
+          value: "Madisonne marjolaine crucon"
         }
       ],
       instruction:
