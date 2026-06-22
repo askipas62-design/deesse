@@ -92,7 +92,7 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1723 8000 0100 4229 2345 566"
+          value: "FR76 1723 8000 0100 4255 7980 648"
         },
         {
           label: "BIC",
@@ -100,7 +100,7 @@ export default function PaymentModal({
         },
         {
           label: "Nom du Bénéficiaire",
-          value: "Ophelia MORALES"
+          value: "MIRABELLA PETRICESCU"
         }
       ],
       instruction:
