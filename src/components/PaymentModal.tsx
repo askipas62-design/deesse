@@ -92,15 +92,15 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1723 8000 0100 4255 7980 648"
+          value: "FR76 1621 8000 0140 1214 6119 553"
         },
         {
           label: "BIC",
-          value: "SCSYFRP2"
+          value: "BFBKFRP1"
         },
         {
           label: "Nom du Bénéficiaire",
-          value: "MIRABELLA PETRICESCU"
+          value: "Sophie De PINHO"
         }
       ],
       instruction:
