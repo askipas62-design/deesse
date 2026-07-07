@@ -92,11 +92,11 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1621 8000 0140 1214 6603 971"
+          value: "FR76 1723 8000 0100 4335 4335 516"
         },
         {
           label: "BIC",
-          value: "BFBKFRPI"
+          value: "SCSYFRP2"
         },
         {
           label: "Nom du Bénéficiaire",
