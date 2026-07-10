@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="pt-4 flex items-center justify-center gap-6">
             <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">Telegram : @deesse_Angele</p>
             <p className="text-brand-gold font-bold text-xs tracking-widest uppercase text-white/40">|</p>
-            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">WhatsApp : 07 57 84 17 10</p>
+            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">WhatsApp : +33 6 51 08 85 42</p>
           </div>
         </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="w-1 h-1 bg-brand-purple-glow rounded-full" />
           <a href="https://t.me/deesse_Angele" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">Telegram</a>
           <div className="w-1 h-1 bg-brand-purple-glow rounded-full" />
-          <a href="https://wa.me/33757841710" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">WhatsApp</a>
+          <a href="https://wa.me/33651088542" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">WhatsApp</a>
         </div>
 
         <div className="max-w-2xl text-[9px] text-white/20 uppercase tracking-[0.2em] leading-relaxed mb-8">
