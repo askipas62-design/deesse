@@ -92,15 +92,15 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1652 8001 3100 0177 1111 057"
+          value: "FR76 1469 0000 0153 0024 8611 064"
         },
         {
           label: "BIC",
-          value: "SMOEFRP1"
+          value: "CMCIFRP1MON"
         },
         {
           label: "Nom du Bénéficiaire",
-          value: "AMELIA MERICHE"
+          value: "Mme Jade Follio"
         }
       ],
       instruction:
