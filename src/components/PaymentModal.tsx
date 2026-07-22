@@ -92,7 +92,7 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1723 8000 0100 4335 4335 516"
+          value: "FR76 1723 8000 0100 4434 1661 365"
         },
         {
           label: "BIC",
@@ -100,7 +100,7 @@ export default function PaymentModal({
         },
         {
           label: "Nom du Bénéficiaire",
-          value: "RIHANNA COLLET"
+          value: "VISCERA MATILDE"
         }
       ],
       instruction:
