@@ -92,7 +92,7 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1621 8000 0140 1214 8268 876"
+          value: "FR76 1621 8000 0140 1214 8443 770"
         },
         {
           label: "BIC",
@@ -100,7 +100,7 @@ export default function PaymentModal({
         },
         {
           label: "Nom du Bénéficiaire",
-          value: "Julie Horckmans"
+          value: "Lola Roulet"
         }
       ],
       instruction:
