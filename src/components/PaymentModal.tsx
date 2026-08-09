@@ -80,7 +80,7 @@ export default function PaymentModal({
       fields: [
         {
           label: "Adresse LTC",
-          value: "ltc1qtclzqfsk8wjyn99asx7h37n403mxmc24889247"
+          value: "ltc1q0x6pahvkaw6xhl4vce9rnjgyfy93wpjuzrdtgv"
         }
       ],
       instruction:
