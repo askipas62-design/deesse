@@ -92,15 +92,15 @@ export default function PaymentModal({
       fields: [
         {
           label: "IBAN",
-          value: "FR76 1621 8000 0140 1214 7535 268"
+          value: "Indisponible"
         },
         {
           label: "BIC",
-          value: "BFBKRP1"
+          value: "Indisponible"
         },
         {
           label: "Nom du Bénéficiaire",
-          value: "Carla Vitard"
+          value: ""
         }
       ],
       instruction:
