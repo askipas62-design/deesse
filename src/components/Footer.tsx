@@ -14,9 +14,9 @@ export default function Footer() {
           <p className="text-white/80 font-display text-xl uppercase tracking-[0.2em]">Ton plaisir, ma règle.</p>
           <p className="text-brand-gold font-cursive text-3xl">Discrétion, professionnalisme et sérénité.</p>
           <div className="pt-4 flex items-center justify-center gap-6">
-            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">Telegram : @deesse_Angele</p>
+            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">Telegram : @ngele_event</p>
             <p className="text-brand-gold font-bold text-xs tracking-widest uppercase text-white/40">|</p>
-            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">WhatsApp : +33 6 51 08 85 42</p>
+            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">WhatsApp : +33 6 51 08 85 42/ +33 7 80 98 79 04</p>
           </div>
         </div>
 
@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="w-1 h-1 bg-brand-purple-glow rounded-full" />
           <Link to="/faq" className="hover:text-brand-gold transition-colors">F.A.Q</Link>
           <div className="w-1 h-1 bg-brand-purple-glow rounded-full" />
-          <a href="https://t.me/deesse_Angele" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">Telegram</a>
+          <a href="https://t.me/angele_event" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">Telegram</a>
           <div className="w-1 h-1 bg-brand-purple-glow rounded-full" />
           <a href="https://wa.me/33651088542" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">WhatsApp</a>
         </div>
