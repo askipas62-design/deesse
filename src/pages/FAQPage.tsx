@@ -49,13 +49,13 @@ export default function FAQPage() {
             <span className="w-10 h-10 rounded-full border border-brand-gold/30 flex items-center justify-center group-hover:bg-brand-gold group-hover:text-black transition-all">
               <span className="text-[10px] font-bold">TG</span>
             </span>
-            <span className="text-xs uppercase tracking-widest font-bold">@deesse_Angele</span>
+            <span className="text-xs uppercase tracking-widest font-bold">@angele_event</span>
           </a>
           <a href="https://wa.me/33757841710" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-brand-gold hover:text-white transition-colors group">
             <span className="w-10 h-10 rounded-full border border-brand-gold/30 flex items-center justify-center group-hover:bg-brand-gold group-hover:text-black transition-all">
               <span className="text-[10px] font-bold">WA</span>
             </span>
-            <span className="text-xs uppercase tracking-widest font-bold">07 57 84 17 10</span>
+            <span className="text-xs uppercase tracking-widest font-bold">6 51 08 85 42/ 7 80 98 79 04</span>
           </a>
         </div>
       </div>
