@@ -9,7 +9,7 @@ export default function LegalPage() {
           <p>
             Le site Déesse Angèle est une vitrine artistique et événementielle privée. 
             <br />Directrice de publication : Déesse Angèle.
-            <br />Contact : Telegram @deesse_Angele
+            <br />Contact : Telegram @angele_event
           </p>
         </div>
         
