@@ -107,8 +107,8 @@ export default function Manifesto() {
                 </a>
               </div>
               <div className="text-right flex flex-col gap-2">
-                <p className="text-[10px] uppercase tracking-widest text-brand-gold font-bold">Telegram : @deesse_Angele</p>
-                <p className="text-[10px] uppercase tracking-widest text-brand-gold font-bold">WhatsApp : 07 57 84 17 10</p>
+                <p className="text-[10px] uppercase tracking-widest text-brand-gold font-bold">Telegram : @angele_event</p>
+                <p className="text-[10px] uppercase tracking-widest text-brand-gold font-bold">WhatsApp :6 51 08 85 42/ 7 80 98 79 04</p>
               </div>
             </div>
           </div>
