@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="pt-4 flex items-center justify-center gap-6">
             <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">Telegram : @ngele_event</p>
             <p className="text-brand-gold font-bold text-xs tracking-widest uppercase text-white/40">|</p>
-            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">WhatsApp : +33 6 51 08 85 42/ +33 7 80 98 79 04</p>
+            <p className="text-brand-gold font-bold text-xs tracking-widest uppercase">WhatsApp : +33 6 44 69 64 53 </p>
           </div>
         </div>
 
