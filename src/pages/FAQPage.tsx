@@ -55,7 +55,7 @@ export default function FAQPage() {
             <span className="w-10 h-10 rounded-full border border-brand-gold/30 flex items-center justify-center group-hover:bg-brand-gold group-hover:text-black transition-all">
               <span className="text-[10px] font-bold">WA</span>
             </span>
-            <span className="text-xs uppercase tracking-widest font-bold">6 51 08 85 42/ 7 80 98 79 04</span>
+            <span className="text-xs uppercase tracking-widest font-bold">6 44 69 64 53/ 6 44 67 21 19</span>
           </a>
         </div>
       </div>
